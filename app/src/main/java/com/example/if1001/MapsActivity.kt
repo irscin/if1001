@@ -1,5 +1,6 @@
 package com.example.if1001
 
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Address
 import android.location.Geocoder
@@ -9,6 +10,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
+import com.e.booking_tables.RestaurantActivity
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 
@@ -28,8 +30,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarker
     private lateinit var mMap: GoogleMap
     private lateinit var fusedLocationClient: FusedLocationProviderClient
     private lateinit var userLocation: Location
-
-    override fun onMarkerClick(p0: Marker?): Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,6 +51,19 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarker
         setUpMap()
 
     }
+
+    override fun onMarkerClick(marker: Marker?): Boolean {
+        launchRestaurantActivity()
+        return false
+    }
+
+    private fun launchRestaurantActivity() {
+        val intent = Intent(this, RestaurantActivity::class.java)
+        intent.putExtra("rID", 1)
+        intent.putExtra("restaurantName", "Pizza11")
+        startActivity(intent)
+    }
+
 
     private fun setUpMap() {
         if(ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION)

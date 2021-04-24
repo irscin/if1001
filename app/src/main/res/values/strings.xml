@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">if1001</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="restaurant_activity">Restaurant Activity</string>
 </resources>
