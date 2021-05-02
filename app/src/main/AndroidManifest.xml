@@ -11,6 +11,25 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.If1001" />
+        android:theme="@style/Theme.If1001" >
+        <activity
+            android:name=".ui.RestaurantActivity"
+            android:label="@string/restaurant_activity"
+            android:parentActivityName=".ui.MapsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.if1001.ui.MapsActivity"/>
+        </activity>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAeM8n8Qacdls6vu-bClO_WZ8evQJNMIlk"/>
+        <activity
+            android:name=".ui.MapsActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
 
 </manifest>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:orientation="vertical">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/rating_comment_lbl" android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@android:drawable/star_off"
+            android:id="@+id/rating_star_1" android:layout_marginTop="8dp" android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@android:drawable/star_off"
+            android:id="@+id/rating_star_2" android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@android:drawable/star_off"
+            android:id="@+id/rating_star_3" android:layout_marginTop="8dp" android:layout_marginStart="10dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@android:drawable/star_off"
+            android:id="@+id/rating_star_4" android:layout_marginTop="8dp" android:layout_marginStart="10dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@android:drawable/star_off"
+            android:id="@+id/rating_star_5" android:layout_marginTop="8dp" android:layout_marginStart="10dp"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" app:srcCompat="@color/colorPrimaryDark"
+        android:id="@+id/imageView"/>
+</LinearLayout>

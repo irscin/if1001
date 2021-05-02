@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="@string/lbl_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/dish_name" android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:id="@+id/dish_name_lbl" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="@string/lbl_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/dish_price" android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" android:layout_marginStart="16dp"/>
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dish_price_lbl" android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp" android:layout_marginBottom="8dp"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" app:srcCompat="@color/colorPrimaryDark" android:id="@+id/imageView3"/>
+</LinearLayout>
